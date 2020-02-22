@@ -1,0 +1,166 @@
+/* * {
+    margin: 0;
+    padding: 0;
+
+} */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a {
+text-decoration: none; /* sin decoracion  */
+cursor: pointer; /* le colocamos otra forma al cursor cuando esta ensimma del boton */
+}
+
+header {
+    width: 100%;
+    height: 60px;
+}
+
+header nav { /* directo al nav para modificar  */
+display: flex;
+justify-content: flex-end; /* el contenido de los botones se va directamente a la derecha  */
+}
+
+header nav .nav-right-section { /* directo a seccion especifica  */
+ width: 200px;
+ height: auto; /* toma de forma automatica la forma (height) del padre  */
+ display: flex; 
+ list-style: none; /* quita cualquier decoracion o los bulletpoint*/
+ justify-content: center; /* justificamos el conbtenido al centro */
+ align-items: center;
+
+}
+
+nav .nav-right-section a { /* vamos directo al ancla del boton que esta en NAV para darle un espaciado en el medio y que no se vea junto */
+    margin-right: 10px;
+    color: #000000;
+}
+
+nav .nav-right-section .menu-icon{
+    background-image: url('https://icon-library.net//images/google-menu-icon/google-menu-icon-24.jpg');
+    background-repeat: no-repeat;  /* evita que se repita la imagen */
+    background-position: center;
+    background-size: contain; /* se aproxima al tamaño del contenedor */
+    width: 25px;
+    /* height: 25px; */
+}
+nav .nav-right-section img { /* seccion de la foto aca le damos forma y posicionamos */
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+main {
+    margin-top: 150px;
+    text-align: center;
+
+}
+
+main .main-logo { /* etiqueta contenedora del logo */
+    width: 530px;
+    margin: 0 auto; /* auto divide el % que sobra y lo iguala a los lados en este contenedor  */
+    margin-bottom: 35px;
+}
+main .main-logo img {
+    width: 300px;
+}
+main .main-input {
+    width: 530px;  /* tamaño de la seccion */
+    margin: 0 auto; /* posicionamiento en la parte del medio */ 
+    margin-bottom: 35px;
+}
+main .main-input-container {
+    width: 525px;
+    border-radius: 100px;
+    border: 1px solid #dfe1e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .main-input input{ /* aca vamos directo al input*/
+    width: 450px;
+    height: 40px;
+    border: none;
+    outline: none;
+}
+main .main-input-container:hover {  /* sombra que se le da al input cuando pasamos el cursor sobre el */
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: #dfe1e5;
+}
+
+main .main-input .search-icon {
+    background-image: url('https://images.vexels.com/media/users/3/132068/isolated/preview/f9bb81e576c1a361c61a8c08945b2c48-icono-de-b-squeda-by-vexels.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+}
+main .main-input .micro-icon {
+    background-image: url('https://inesh.org/blog/wp-content/uploads/2019/10/google-voice-search-increase-your-google-rank.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+main .main-buttons {
+    width: 530px;
+    margin: 0 auto;
+}
+main .main-buttons div {
+    display: inline-block; /* esto es para quitar el bloqueo que tiene el navegador por defecto en los DIVs*/
+}
+
+main .main-buttons button {
+    height: 36px;
+    background-color: #f2f2f2;
+    border: 0;
+    font-size: 14px;
+    color: #5f6368;
+    border-radius: 5px;
+    padding: 0 15px;
+    margin-right: 15px;
+}
+main .main-buttons button:hover{ /* estilos para el hover de los botones */
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px #5f6368;
+    color: #222222;
+
+}
+
+footer { /* contenedor principal de footer  */
+    width: 100%;
+    height: 50px;
+    position: absolute; /* con esto aseguramos que el footer este siempre hasta abajo de la pagina  */
+    bottom: 0;/* con esto aseguramos que el footer este siempre hasta abajo de la pagina  */
+    display: grid; /* grid de la nueva actualizacion de css para colocar las cuadriculas */
+    grid-template-columns: 1fr 1fr; /* signiofica con esto que tenemos dos fracciones ocupadas */
+    align-items: center;
+    font-size: 13px;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+}
+
+footer ul {
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+footer .footer-left {
+    justify-self: left;
+}
+
+footer .footer-right {
+    justify-self: right;
+}
+
+footer ul li a {
+    margin: 10px;
+    color: #5f6368;
+}
